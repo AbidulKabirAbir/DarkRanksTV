@@ -568,7 +568,16 @@
         { name: "Deepto TV (Alt)", logo: "https://upload.wikimedia.org/wikipedia/en/3/31/Deepto_TV_logo.png", url: "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8" },
         { name: "INDEPENDENT TV (gpcdn)", logo: "https://dl.dropbox.com/s/7xwwb8hetz3w8rp/independent_tv.png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8" },
         { name: "Ekattor TV (gpcdn)", logo: "https://s4.gifyu.com/images/imagea02f4314e761661d.png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8" },
-        { name: "JAMUNA TV (gpcdn)", logo: "https://dl.dropbox.com/s/k7z1dsec1jfjbkn/jamuna_tv_bd.png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8" }
+        { name: "JAMUNA TV (gpcdn)", logo: "https://dl.dropbox.com/s/k7z1dsec1jfjbkn/jamuna_tv_bd.png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8" },
+        
+        // ========== NEW: FIFA World Cup category channels ==========
+        { name: "Telemundo Al Dia", logo: "", url: "https://d1rqgw5gocwo9i.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-stitched/10a44c37-f976-4d2b-ab23-8637a7a094ca/3.m3u8", category: "FIFA World Cup", countryName: "International" },
+        { name: "Canal 5 (720p)", logo: "", url: "http://45.5.119.43:4000/play/a05o/index.m3u8", category: "FIFA World Cup", countryName: "Mexico" },
+        { name: "Somoy News TV (1080p)", logo: "", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8", category: "FIFA World Cup", countryName: "Bangladesh" },
+        { name: "Kantipur TV (1080p)", logo: "", url: "https://ktvhdsg.ekantipur.com:8443/high_quality_85840165/hd/playlist.m3u8", category: "FIFA World Cup", countryName: "Nepal" },
+        { name: "TUDN (1080p)", logo: "", url: "https://streaming.alwaysdata.net/tudn.php", category: "FIFA World Cup", countryName: "Mexico" },
+        { name: "Canal 5 TV Cozumel (1080p)", logo: "", url: "https://video0.rogohosting.com:19360/tvcozumel/tvcozumel.m3u8", category: "FIFA World Cup", countryName: "Mexico" },
+        { name: "TUDN (Alternative)", logo: "", url: "https://dcs-live.mp.lura.live/server/play/p0d5L5aFqyXYNTGA/manifest.m3u8?encp=mqzkjvyBVRlB0w6Qnk0ofg:M6Ym62xXitnOW8TxBMGfYU4b2gP_zK02-_9FO4FdpAq727YK2Fb5Y09D2S2VODzEYSXs3fxvCDEiaMRiu1V0hABzFLFs_HunosI-OiG1M9z5_k48me-a6Kod98jvFJ-eK9X_JsnChDeFUBFNJ5AbP2JsY8N4q0uVGVE1LN-f0F5L4jdR-lekryVKa0XBGdKdX2kpzriI6WmcK4ZRMNRhogtVyOIS9tDza3T4UkKFqjBTUsDn4kdf4Q1wqjQgECDvkZSlbaB-ZQ7Ocehyx99VU8iOhmjX9bwwwu4RSYR57OCcO9qJOtowaFZ_rgDejs7KOttNNr2Rm8Nh0q7Fw0XkV3OkqreGniT2R9a4xqN2wmuPDUfnfQSC_oqRYyFZul-4EuTDh3lu-j0Mp2qzGxBvK99KpZW3cp-3auH0HJo77jeqx997cAE7EeIzSpE3dm_1cAp_-_vRXI_oejEd3wzhbu_SwBscS_ZSUwZmC8Xerh5A2yZk4vxODefh0RCFT_lHaTZ4Qx1x_nMgd7_U13bQlS29dsgKpR4yT2gxLQXvYTQCuwJamK8ukMTZjrKttT1YCDi4Qknd9Usl3BfnEE3yNL14Zcg1ATiNNQBiScTAsjbrwPDCFQ4wzP3aM7RyEmiTk1F2zOB3tUAIDKYIHqi7e-pG4ICkO0vVAZHdcimJkkAzZjjfAHJlcagOzfOF3D8-zqH5HSTGxC52IM1SrC_IZw&anvtrid=27cd2f903ccdb1a7b65cc5404d79f756&anvauth=tb=0~te=1781196335~sgn=c9f39f0c234b0a2b7ddc5cb2203b58c72da1953d18223569204268169d0d9b3e&t=1781196245", category: "FIFA World Cup", countryName: "Mexico" }
     ];
 
     // JSON categories (minimal representative, but in final all are included)
@@ -600,7 +609,7 @@
                 logo: ch.logo || '',
                 url: ch.url,
                 category: category,
-                countryName: "Bangladesh"
+                countryName: ch.countryName || "Bangladesh"
             });
         }
     }
